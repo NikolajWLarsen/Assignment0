@@ -8,26 +8,26 @@ namespace Lecture1.Tests
     {
         
         [Fact]
-        public void Test_LeapYear_given_4_returns_true(){
+        public void Test_isLeapYear_given_4_returns_true(){
             var expected = true;
             
-            var actual = new Program().LeapYear2(4);
+            var actual = new Program().IsLeapYear(4);
 
             Assert.Equal(expected,actual);
         }
 
         [Fact]
-        public void Test_LeapYear_given_1600_returns_true()
+        public void Test_isLeapYear_given_1600_returns_true()
         {
             var expected = true;
 
-            var actual = new Program().LeapYear3(1600);
+            var actual = new Program().IsLeapYear(1600);
 
             Assert.Equal(expected, actual);
         }
 
         [Fact]
-        public void Test_LeapYear_given_1700_false(){
+        public void Test_isLeapYear_given_1700_false(){
             var expected = false;
 
             var actual = new Program().IsLeapYear(1700);
