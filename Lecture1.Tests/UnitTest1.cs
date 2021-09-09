@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using Lecture1;
+using System.IO;
 
 namespace Lecture1.Tests
 {
@@ -42,11 +43,12 @@ namespace Lecture1.Tests
 
         }
 
+       /* [Fact]
+        public void Test_throw_exception_if_userinput_is_a_string()
+        {
+            Console.SetIn(new StringReader("asdf"));
+            Assert.Throws<Exception>(() => Program.main(new string[0]));
 
-        /*public void test_if_user_gives_a_string(){
-            var expected = 
-
-            Assert.Throws<Exception>( () => new Program().readInput());
         }*/
     }
 }
